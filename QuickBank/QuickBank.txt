@@ -1,5 +1,5 @@
 ## Title: QuickBank
-## APIVersion: 101045 101046
+## APIVersion: 101046
 ## Author: |c4B8BFERanckor90|r
 ## Version: 1.0.1
 ## AddonVersion: 1.0.1
