@@ -1,5 +1,8 @@
 # Quick Bank
 
+![Version](https://img.shields.io/badge/version-v1.0.1-blue)  ![License: All Rights Reserved](https://img.shields.io/badge/license-All--Rights--Reserved-red)  ![Usage: No Redistribution](https://img.shields.io/badge/Usage-No%20Redistribution-red)
+
+
 ### Bank all the main Currenices with one click.
     * For this Addon to work follow these steps:
         ** Install QuickBank into you ESO Addons file.
