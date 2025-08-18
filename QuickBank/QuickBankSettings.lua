@@ -6,7 +6,7 @@ function QuickBankSettings.Init()
         type = "panel",
         name = "Quick Bank",
         displayName = "Quick Bank",
-        author = "You",
+        author = "Ranckor90",
         version = "1.0.1",
         registerForRefresh = true,
         registerForDefaults = true
