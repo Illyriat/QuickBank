@@ -1,2 +1,3 @@
 Version 1.0.1
 - Title & Version number added onto UI
+- ESO Update 101047 supported.
