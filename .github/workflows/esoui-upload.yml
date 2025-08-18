@@ -41,15 +41,27 @@ jobs:
         run: |
           set -euo pipefail
           echo "Updating to VERSION=${VERSION}"
-          sed -i -E "s/version-v[0-9]+\.[0-9]+\.[0-9]+/version-${VERSION}/" README.md
-          if git diff --quiet -- README.md; then
-            echo "No version string matched in README.md" >&2
-            grep -n -i 'version' README.md || true
+
+          # Find README case-insensitively among tracked files
+          FILE="$(git ls-files | awk 'tolower($0)=="readme.md"{print; exit}')"
+          if [ -z "${FILE:-}" ]; then
+            echo "README.md not found. Candidates:" >&2
+            git ls-files | grep -i readme || true
+            exit 1
+          fi
+          echo "Target file: $FILE"
+          echo "README_FILE=$FILE" >> "$GITHUB_ENV"
+
+          sed -i -E "s/version-v[0-9]+\.[0-9]+\.[0-9]+/version-${VERSION}/" "$FILE"
+
+          if git diff --quiet -- "$FILE"; then
+            echo "No version string matched in $FILE" >&2
+            grep -n -i 'version' "$FILE" || true
             exit 1
           fi
 
       - name: Commit README change
         uses: EndBug/add-and-commit@v9
         with:
-          add: README.md
+          add: ${{ env.README_FILE }}
           message: "docs: bump README to ${VERSION} [skip ci]"
