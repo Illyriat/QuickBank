@@ -1,6 +1,6 @@
 # Quick Bank
 
-![Version](https://img.shields.io/badge/version-v1.0.1-blue)  ![License: All Rights Reserved](https://img.shields.io/badge/license-All--Rights--Reserved-red)  ![Usage: No Redistribution](https://img.shields.io/badge/Usage-No%20Redistribution-red)
+![Version](https://img.shields.io/badge/version-v1.0.1-blue)  ![License: All Rights Reserved](https://img.shields.io/badge/license-All--Rights--Reserved-red)  ![Usage: No Redistribution](https://img.shields.io/badge/Usage-No%20Redistribution-red) ![Quick Bank](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fillyriat.com%2Fbadges%2Fdownloads.json&query=$.esoui.addons.quick-bank.total_str&label=ESOUI%20Downloads&color=blue&cacheSeconds=3600)
 
 
 ### Bank all the main Currenices with one click.
@@ -10,10 +10,10 @@
         ** You can bank the total amount that your character is holding of:
             - Gold, Alliance Points, Tel Var, & Writ Vouchers.
         ** Head to the banker/ call the player banker.
-        ** A UI window will appear when the Bank Scene opens in the top left by default.
+        ** A UI window will appear when the Bank Scene opens in the top left by default.g
         ** Click on of the options & the total amount will be deposited into you bank.
         ** The UI window can be moved & positioned to a prefered place.
-
+g
 
 
 #
